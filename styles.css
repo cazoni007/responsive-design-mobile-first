@@ -34,19 +34,26 @@ html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
 }
-.header__title {
+.title {
     font-size: 2.4rem;
     line-height: 2.6rem;
-    max-width: 288px;
+    width: 80%;
     font-weight: 700;
 }
 .down-arrow {
-    padding-left: 12px;
+    width: 12px;
+    height: 7.41px;
+    background: url('./assets/icons/down-arrow.svg') center/cover no-repeat;
+    display: inline-block;
+    margin-left: 12px;
 }
-.header__p {
+.paragraph {
     font-size: 1.4rem;
+    line-height: 1.8rem;
+    width: 85%;
     font-weight: 500;
-    max-width: 288px;
+}
+.paragraph--soft-orage{
     color: var(--soft-orange);
 }
 .header {
@@ -71,4 +78,111 @@ html {
     background-color: var(--off-white);
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.tasas-cambio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--off-white);
+}
+.img-background {
+    width: 195px;
+    height: 195px;
+    background: url('./assets/img/Bitcoin.svg') center/cover no-repeat;
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+.title--section-color {
+    margin-bottom: 20px;
+    color: var(--warm-black);
+}
+.paragraph--section-color {
+    color: #757575;
+}
+.table-container {
+    margin-top: 40px;
+}
+.title-table {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 2.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 18px;
+}
+.title-table--color {
+    color: #FF9536;
+}
+.table-container__column {
+    height: 39px;
+    background-color: var(--white);
+}
+.table-container__column--crypto {
+    width: 101px;
+    text-align: left;
+}
+.table-container__column--price {
+    align-content: center;
+    width: 95px;
+}
+.table-paragraph {
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.936rem;
+    color: #B5B0AC;
+}
+.table-paragraph--price-font-size {
+    display: inline-block;
+    width: auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 16.94px;
+    color: #757575;
+}
+.table-container__down-graph {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('./assets/icons/trending-down.svg') center/cover no-repeat;
+    margin-left: 12px;
+}
+.table-container__up-graph {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('./assets/icons/trending-up.svg') center/cover no-repeat;
+    margin-left: 12px;
+}
+.table-container--column-top-left {
+    border-radius: 8px 0px 0px 0px;
+}
+.table-container--column-top-right {
+    border-radius: 0px 8px 0px 0px;
+}
+.table-container--column-bottom-left {
+    border-radius: 0px 0px 0px 8px;
+}
+.table-container--column-bottom-right {
+    border-radius: 0px 0px 8px 0px;
+}
+.table-text-update {
+    color: var(--warm-black);
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+.table-text-update--title-bold {
+    font-weight: 700;
+}
+.table-text-update--background-color{
+    background-color: var(--soft-orange);
 }
