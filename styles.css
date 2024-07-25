@@ -104,16 +104,10 @@ html {
 .table-container {
     margin-top: 40px;
     display: flex;
+    width: 100%;
     overflow-x: auto;
 }
-.table-container__table-coins {
-    width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.table-container__table-comision {
+.table-container__table {
     width: 100%;
     flex-shrink: 0;
     display: flex;
@@ -207,4 +201,25 @@ html {
 }
 .table-text-update--background-color-blue {
     background-color: var(--soft-blue);
+}
+.inactive {
+    display: none;
+}
+.table-container__arrow {
+    position: absolute; 
+    width: 7.41px;
+    height: 12px;
+    background: url('./assets/icons/right-arrow.svg') center/cover no-repeat;
+}
+.table-container__arrow-left {
+    transform: scaleX(-1);
+    margin-top: 112px;
+    margin-right: 250.8px;
+}
+.table-container__arrow-right {
+    margin-top: 112px;
+    margin-left: 250.8px;
+}
+.table-container__arrow:hover {
+    cursor: pointer;
 }
