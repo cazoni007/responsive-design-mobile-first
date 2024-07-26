@@ -189,7 +189,8 @@ html {
     font-size: 1.2rem;
     font-weight: 400;
     min-width: 180px;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 65px;
     padding: 10px 10px;
     border-radius: 8px;
 }
@@ -207,18 +208,59 @@ html {
 }
 .table-container__arrow {
     position: absolute; 
-    width: 7.41px;
+    width: 80%;
     height: 12px;
-    background: url('./assets/icons/right-arrow.svg') center/cover no-repeat;
+    background: url('./assets/icons/right-arrow.svg') no-repeat;
 }
 .table-container__arrow-left {
     transform: scaleX(-1);
     margin-top: 112px;
-    margin-right: 250.8px;
+    background-position: right;
 }
 .table-container__arrow-right {
     margin-top: 112px;
-    margin-left: 250.8px;
+    background-position: right;
+}
+.product-comparation {
+    padding: 55px 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--warm-black);
+    text-align: center;
+    align-items: center;
+}
+.chip-icon {
+    width: 100%;
+    height: 24.01px;
+    background: url('assets/icons/batata.svg') center no-repeat;
+    position: absolute;
+    top: -12px;
+}
+.title--color-white {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+.paragraph-color-gray {
+    color: #808080;
+    width: 100%;
+}
+.paragraph--margin-bottom {
+    margin-bottom: 15px;
+}
+.title--size {
+    font-size: 1.8rem;
+    margin: 8px 0;
+    width: 100%;
+}
+.product-comparation__section {
+    background-color: #282623;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    width: 90%;
+    padding: 18px;
+    text-align: left;
+    margin-top: 15px;
 }
 .table-container__arrow:hover {
     cursor: pointer;
