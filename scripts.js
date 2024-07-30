@@ -38,12 +38,27 @@ function inactiveArrows(){
 
 rightPlansArrow.addEventListener('click', movePlansRight);
 leftPlansArrow.addEventListener('click', movePlansLeft);
+plansContainer.addEventListener('scroll', inactivePlansArrows);
 
 function movePlansRight(){
-    plansContainer.scrollLeft += plansContainer.offsetWidth / 3;
+    plansContainer.scrollLeft += 192;
 }
 function movePlansLeft(){
-    plansContainer.scrollLeft -= plansContainer.offsetWidth / 3;
+    plansContainer.scrollLeft -= 192;
+}
+function inactivePlansArrows() {
+    if (plansContainer.scrollLeft <= plansContainer.scrollWidth / 4){
+        leftPlansArrow.classList.add('inactive');
+        rightPlansArrow.classList.remove('inactive');
+    }
+    else if (plansContainer.scrollLeft + plansContainer.offsetWidth >= plansContainer.scrollWidth - (plansContainer.scrollWidth / 4)) {
+        rightPlansArrow.classList.add('inactive');
+        leftPlansArrow.classList.remove('inactive');
+    }
+    else {
+        rightPlansArrow.classList.remove('inactive');
+        leftPlansArrow.classList.remove('inactive');
+    }
 }
 window.onload = function() {
     plansContainer.scrollLeft = plansContainer.scrollWidth / 4;
