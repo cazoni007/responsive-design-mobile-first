@@ -207,19 +207,19 @@ html {
 .inactive {
     display: none;
 }
-.table-container__arrow {
+.arrow {
     position: absolute; 
     width: 7.41px;
     height: 12px;
     background: url('./assets/icons/right-arrow.svg') no-repeat;
 }
-.table-container__arrow-left {
+.arrow--left {
     transform: scaleX(-1);
     margin-right: 256px;
     margin-top: 112px;
     background-position: right;
 }
-.table-container__arrow-right {
+.arrow--right {
     margin-left: 256px;
     margin-top: 112px;
     background-position: right;
@@ -278,6 +278,7 @@ html {
 }
 .plans {
     background-color: var(--off-white);
+    padding-bottom: 40px;
 }
 .title--plans {
     margin: 0 auto;
@@ -293,10 +294,12 @@ html {
 }
 .plans__cards {
     display: flex;
-    height: 330px;
+    padding-top: 18px;
+    padding-bottom: 10px;
     overflow-x: auto;
+    scroll-behavior: smooth;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     align-items: center;
 }
 .plans__card-item {
@@ -306,10 +309,15 @@ html {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     margin: 0 5px;
-    margin-bottom: 40px;
     position: relative;
     text-align: center;
     width: 192px;
+}
+.plans__card-item--margin-left {
+    margin-left: calc(100% - 192px);
+}
+.plans__card-item--margin-right {
+    margin-right: calc(100% - 192px);
 }
 .inter-title {
     font-family: "Inter", sans-serif;
@@ -357,6 +365,15 @@ html {
     border: 2px var(--bitcoin-orange) solid;
     border-radius: 4px;
     margin-bottom: 30px;
+}
+.arrow--plans-left {
+    transform: scaleX(-1);
+    right: calc(100% - 10%);
+    margin-bottom: 40px;
+}
+.arrow--plans-right {
+    margin-bottom: 40px;
+    left: calc(100% - 10%);
 }
 .table-container__arrow:hover {
     cursor: pointer;
