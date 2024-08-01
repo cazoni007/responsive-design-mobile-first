@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Batatabit</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 800px)">
 </head>
 <body>
     <header class="header">
@@ -22,7 +24,7 @@
             <h1 class="title title--section-color">Visibilizamos todas las tasas de cambio.</h1>
             <p class="paragraph paragraph--section-color">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             <section class="table-container">
-                <div class="table-container__table">
+                <div class="table-container__table table-container__table--left">
                     <h1 class="title-table title-table--color">Monedas</h1>
                     <table>
                         <tr>
@@ -46,7 +48,7 @@
                     <span class="arrow arrow--right"></span>
                     <h1 class="table-text-update table-text-update--background-color"><b class="table-text-update--title-bold">Actualizado: </b>19 Julio 23:45</h1>
                 </div>
-                <div class="table-container__table">
+                <div class="table-container__table table-container__table--right">
                     <h1 class="title-table title-table--color-blue">Comisiones</h1>
                 <table>
                     <tr>
@@ -70,28 +72,34 @@
             </section>
         </section>
         <section class="product-comparation">
-            <div class="chip-icon"></div>
+            <div class="chip-icon chip-icon--product-comparation"></div>
             <h1 class="title title--color-white">Creamos un producto sin comparación.</h1>
             <p class="paragraph paragraph-color-gray paragraph--margin-bottom">Confiable y diseñado para su uso diario.</p>
-            <section class="product-comparation__section">
-                <img src="./assets/icons/clock.svg" alt="clock icon">
-                <h1 class="title title--color-white title--size">Tiempo real</h1>
-                <p class="paragraph paragraph-color-gray">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-            </section>
-            <section class="product-comparation__section">
-                <img src="./assets/icons/eye.svg" alt="eye icon">
-                <h1 class="title title--color-white title--size">No hay tasas escondidas</h1>
-                <p class="paragraph paragraph-color-gray">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-            </section>
-            <section class="product-comparation__section">
-                <img src="./assets/icons/dollar-sign.svg" alt="dollar icon">
-                <h1 class="title title--color-white title--size">Compara monedas</h1>
-                <p class="paragraph paragraph-color-gray">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-            </section>
-            <section class="product-comparation__section">
-                <img src="./assets/icons/check-circle.svg" alt="check-circle icon">
-                <h1 class="title title--color-white title--size">Información confiable</h1>
-                <p class="paragraph paragraph-color-gray">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+            <section class="product-comparation--articles">
+                <div class="product-comparation__article-container">
+                    <article class="product-comparation__article-item">
+                        <img src="./assets/icons/clock.svg" alt="clock icon">
+                        <h1 class="title title--color-white title--size">Tiempo real</h1>
+                        <p class="paragraph paragraph-color-gray">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                    </article>
+                    <article class="product-comparation__article-item">
+                        <img src="./assets/icons/eye.svg" alt="eye icon">
+                        <h1 class="title title--color-white title--size">No hay tasas escondidas</h1>
+                        <p class="paragraph paragraph-color-gray">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                    </article>
+                </div>
+                <div class="product-comparation__article-container">
+                    <article class="product-comparation__article-item">
+                        <img src="./assets/icons/dollar-sign.svg" alt="dollar icon">
+                        <h1 class="title title--color-white title--size">Compara monedas</h1>
+                        <p class="paragraph paragraph-color-gray">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                    </article>
+                    <article class="product-comparation__article-item">
+                        <img src="./assets/icons/check-circle.svg" alt="check-circle icon">
+                        <h1 class="title title--color-white title--size">Información confiable</h1>
+                        <p class="paragraph paragraph-color-gray">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                    </article>
+                </div>
             </section>
         </section>
         <section class="bitcoin-baby">
@@ -103,31 +111,43 @@
             <h1 class="title title--plans">Escoge el plan que mejor se ajuste a ti.</h1>
             <p class="paragraph paragraph--plans">Cualquier plan te da acceso completo a nuestra plataforma.</p>
             <section class="plans__cards">
-                <article class="plans__card-item plans__card-item--margin-left">
+                <article class="plans__card-item plans__card-item--margin-left left-card">
                     <p class="paragraph paragraph--card-item">Pago Anual</p>
                     <p class="inter-text inter-text--card-item">$ <b class="inter-title inter-title--card-item">99</b></p>
-                    <p class="inter-text inter-text--font-color">*Ahorras $129 comparado al plan mensual.</p>
-                    <h1 class="title title--box-plans-card">Escoger este <span class="arrow-right-icon"></span></h1>
+                    <p class="inter-text inter-text--font-color left-p-card">*Ahorras $129 comparado al plan mensual.</p>
+                    <a href="#" class="anchor anchor--plans left-a-card"><h1 class="title title--box-plans-card left-h1-card">Escoger este <span class="arrow-right-icon left-card-arrow"></span></h1></a>
                 </article>
-                <article class="plans__card-item">
-                    <h1 class="inter-title inter-title--float-title">Recomendado</h1>
+                <article class="plans__card-item center-card">
+                    <h1 class="inter-title inter-title--float-title center-float-card">Recomendado</h1>
                     <p class="paragraph paragraph--card-item">Pago Anual</p>
                     <p class="inter-text inter-text--card-item">$ <b class="inter-title inter-title--card-item">99</b></p>
-                    <p class="inter-text inter-text--font-color">*Ahorras $129 comparado al plan mensual.</p>
-                    <h1 class="title title--box-plans-card">Escoger este <span class="arrow-right-icon"></span></h1>
+                    <p class="inter-text inter-text--font-color center-p-card">*Ahorras $129 comparado al plan mensual.</p>
+                    <a href="#" class="anchor anchor--plans center-a-card"><h1 class="title title--box-plans-card center-h1-card">Escoger este <span class="arrow-right-icon center-card-arrow"></span></h1></a>
                 </article>
-                <article class="plans__card-item plans__card-item--margin-right">
+                <article class="plans__card-item plans__card-item--margin-right right-card">
                     <p class="paragraph paragraph--card-item">Pago Anual</p>
                     <p class="inter-text inter-text--card-item">$ <b class="inter-title inter-title--card-item">99</b></p>
-                    <p class="inter-text inter-text--font-color">*Ahorras $129 comparado al plan mensual.</p>
-                    <h1 class="title title--box-plans-card">Escoger este <span class="arrow-right-icon"></span></h1>
+                    <p class="inter-text inter-text--font-color right-p-card">*Ahorras $129 comparado al plan mensual.</p>
+                    <a href="#" class="anchor anchor--plans right-a-card"><h1 class="title title--box-plans-card right-h1-card">Escoger este <span class="arrow-right-icon right-card-arrow"></span></h1></a>
                 </article>
                 <span class="arrow arrow--plans-left"></span>
                 <span class="arrow arrow--plans-right"></span>
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__socials">
+            <ul class="footer__ul">
+                <li class="paragraph paragraph--footer-social"><a class="anchor" href="">Linkedin</a></li>
+                <li class="paragraph paragraph--footer-social"><a class="anchor" href="">Crunchbase</a></li>
+                <li class="paragraph paragraph--footer-social"><a class="anchor" href="">Hackernews</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <div class="chip-icon chip-icon--footer-logo"></div>
+            <p class="paragraph paragraph--footer-logo">® Batatabit 2020</p>
+        </div>
+    </footer>
     <script src="./scripts.js"></script>
 </body>
 </html>

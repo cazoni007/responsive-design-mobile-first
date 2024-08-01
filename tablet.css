@@ -1,0 +1,40 @@
+.table-container__table {
+    width: 50%;
+}
+.table-container__table--left {
+    flex-wrap: wrap;
+    align-content: end;
+    padding-right: 50px;
+}
+.table-container__table--right {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: 50px;
+}
+.arrow--right {
+    display: none;
+}
+.product-comparation__article-item {
+    height: 14rem;
+}
+.bitcoin-baby__background-img{
+    background: url('./assets/img/bitcoinbaby2x.png') center/cover no-repeat;
+}
+.plans__cards {
+    overflow-x: hidden;
+    justify-content: space-evenly;
+}
+.plans__card-item--margin-left {
+    margin-right: 2px;
+    margin-left: 0;
+}
+.plans__card-item--margin-right {
+    margin-left: 2px;
+    margin-right: 0;
+}
+.arrow--plans-left {
+    display: none;
+}
+.arrow--plans-right {
+    display: none;
+}

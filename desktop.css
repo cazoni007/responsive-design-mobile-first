@@ -1,0 +1,40 @@
+.title {
+    font-size: 4rem;
+    line-height: 4.2rem;
+}
+.paragraph {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+.title--size {
+    font-size: 2rem;
+}
+.table-paragraph {
+    font-size: 1.8rem;
+}
+.title--box-plans-card {
+    font-size: 1.8rem;
+}
+.table-paragraph--price-font-size {
+    font-size: 1.6rem;
+}
+.bitcoin-baby__background-img{
+    background: url('./assets/img/bitcoinbabylarge.jpg') center/cover no-repeat;
+    height: 400px;
+    filter: brightness(115%);
+}
+.product-comparation__article-container {
+    width: 50%;
+} 
+.product-comparation__article-item {
+    height: 21rem;
+    max-width: 65rem;
+}
+.plans__cards {
+    overflow-x: hidden;
+    justify-content: center;
+}
+.plans__card-item {
+    margin: 0 20px;
+    width: 22rem;
+}
