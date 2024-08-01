@@ -60,6 +60,20 @@ function inactivePlansArrows() {
         leftPlansArrow.classList.remove('inactive');
     }
 }
+function inactivePlansArrows() {
+    if (plansContainer.scrollLeft <= plansContainer.scrollWidth / 4){
+        leftPlansArrow.classList.add('inactive');
+        rightPlansArrow.classList.remove('inactive');
+    }
+    else if (plansContainer.scrollLeft + plansContainer.offsetWidth >= plansContainer.scrollWidth - (plansContainer.scrollWidth / 4)) {
+        rightPlansArrow.classList.add('inactive');
+        leftPlansArrow.classList.remove('inactive');
+    }
+    else {
+        rightPlansArrow.classList.remove('inactive');
+        leftPlansArrow.classList.remove('inactive');
+    }
+}
 window.onload = function() {
     plansContainer.scrollLeft = plansContainer.scrollWidth / 4;
 };
