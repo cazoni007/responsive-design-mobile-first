@@ -447,9 +447,6 @@ html {
     text-align: center;
     padding-top: 6px;
 }
-.arrow, .header__plans:hover {
-    cursor: pointer;
-}
 .cards-display-none {
     width: 19.2rem;
     height: 24.46rem;
@@ -460,4 +457,7 @@ html {
     color: var(--white);
     border: 2px var(--white) solid;
     background-color: var(--white);
+}
+.arrow, .header__plans:hover {
+    cursor: pointer;
 }
